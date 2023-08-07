@@ -1,0 +1,60 @@
+Q1/
+Output:
+hey from message1 
+
+
+Description:
+- Call @Bean before the method so the compiler can read it.
+ Without it, the method is not work.
+-  This getMessage1 will be printed only because it is a single one
+
+
+Q2/
+Output:
+hey from message1
+hey from message2
+
+Description:
+- He will print the method getMessage1 then the method getMessage2 because @Qualifier has been put and this arranges the sentences in order because they were placed in the parameter
+-@Qualifier are placed to print in order
+
+Q3/
+output:
+hey from message1
+hey from message3
+hey from message2
+
+Description:
+-It will print the  method getMessage1, then the  method getMessage3, then themethod getMessage2 because the @Qualifier '3' was put in the parameter of the 2nd muthid and this arranges the sentences in order number
+-@Qualifier are placed to print in order
+- @Quailifier'1' has no specific order but @Quailifier'3' and @Quailifier'2' have a mandatory specific order with @Quailifier'3' above @Quailifier"2"
+
+Q4/
+Output:
+
+hey from message1
+hey from main controller
+hey from message3
+hey from message2
+
+
+Description:
+-In Class MainController it is written a method in which there is a parameter @Quailifier"1" This arranges the sentences and prints the message1, then the sentence hey from main controller, then a getmessage2 @Quailifier ("3")
+Then at the end a message 2 is printed
+-@Qualifier are placed to print in order
+
+
+Q5/
+Output:
+
+hey from message3
+hey from message2
+hey from main controller
+hey from message1
+
+Description:
+- @Qualifier are placed to print in order
+- In Class MainController, a method in which a parameter is written @quailifier'2 'is    written This arranges the sentences and prints message 3,
+Because in the Message 2 appearance it has Parameter @quailifier'3 'and here it will hey from main controller
+ A message is printed 3, then it is printed.
+- getMessage1 has no specific order
